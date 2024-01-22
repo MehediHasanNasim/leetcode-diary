@@ -10,6 +10,7 @@ class Solution(object):
             s[l], s[r] = s[r], s[l]
             l , r = l + 1, r - 1
             
+            
         # Stack // time o(n), space o(n)
         stack = []
         for c in s:
@@ -18,3 +19,12 @@ class Solution(object):
         while stack:
             s[i] = stack.pop()
             i += 1
+         
+            
+        # recursion // time o(n), space o(n)
+        def reverse(l, r):
+            if l < r:
+                s[l], s[r] = s[r], s[l]
+                reverse(l + 1, r - 1)
+        reverse(0, len(s) - 1 )
+        
