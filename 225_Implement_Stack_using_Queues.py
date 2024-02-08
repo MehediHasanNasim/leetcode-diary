@@ -17,8 +17,8 @@ class MyStack(object):
             return self.stack[-1]
         else:
             return False
-    
 
     def empty(self):
         return len(self.stack) == 0
+        
         
