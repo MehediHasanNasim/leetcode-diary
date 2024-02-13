@@ -8,7 +8,7 @@ class Solution(object):
         return sorted(res)
             
         # short way of looping
-        squares = [num*num for num in nums] 
+        squares = [i*i for i in nums] 
         return sorted(squares)
 
         # two pointer solution
