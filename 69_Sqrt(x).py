@@ -1,6 +1,9 @@
 class Solution(object):
     def mySqrt(self, x):
         
+        # shortcut 
+        return int(x ** 0.5)
+    
         # Binary search
         l, r = 0, x
         res = 0
