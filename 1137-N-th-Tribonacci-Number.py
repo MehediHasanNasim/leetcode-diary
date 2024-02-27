@@ -8,4 +8,5 @@ class Solution(object):
         
         for i in range(3, n + 1):
             t[0], t[1], t[2] = t[1], t[2], sum(t)
+            
         return t[2]
