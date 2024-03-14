@@ -14,7 +14,7 @@ class Solution(object):
 
         # return odd_num
         
-
+        '''final way'''
         length = (high - low) + 1
         odd_num = length // 2
         if length % 2 and low % 2:
