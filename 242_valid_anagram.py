@@ -18,3 +18,15 @@ class Solution(object):
             if countS[c] != countT.get(c, 0):
                 return False
         return True
+
+        """ Solution 0 """
+        if len(s) != len(t):
+            return False
+
+        countS, countT = {}, {}
+        for i in s:
+            countS[i] = countS.get(i, 0) + 1
+        for i in t:
+            countT[i] = countT.get(i, 0) + 1
+        
+        return countS == countT
